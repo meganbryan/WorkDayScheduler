@@ -29,7 +29,67 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <table class="table table-bordered table-striped table-secondary text-center">
+        <thead>
+          <tr>
+            <th scope="col" width= "15%">Time Slot</th>
+            <th scope="col" width= "70%"> Event </th>
+            <th scope="col" width= "15%">Add to schedule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"> 9:00 AM </th>
+            <td> Beginning of Day</td>
+            <td class = "bg-danger"><i class="fas fa-lock"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 9:00 - 10:00 AM </th>
+            <td id = "item-append-1"> </td>
+            <td class = "bg-success "><i id = "add-item-1" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 10:00 - 11:00 AM </th>
+            <td id = "item-append-2"> </td>
+            <td class = "bg-success"><i id = "add-item-2" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 11:00 - 12:00 PM </th>
+            <td id = "item-append-3"> </td>
+            <td class = "bg-success"><i id = "add-item-3" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 12:00 - 1:00 PM </th>
+            <td> Lunch Break </td>
+            <td class = "bg-danger"><i class="fas fa-lock"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 1:00 - 2:00 PM </th>
+            <td id = "item-append-4"> </td>
+            <td class = "bg-success"><i id = "add-item-4" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 2:00 - 3:00 PM </th>
+            <td id = "item-append-5"> </td>
+            <td class = "bg-success"><i id = "add-item-5" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 3:00 - 4:00 PM </th>
+            <td id = "item-append-6"> </td>
+            <td class = "bg-success"><i id = "add-item-6" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 4:00 - 5:00 PM </th>
+            <td id = "item-append-7"> </td>
+            <td class = "bg-success"><i id = "add-item-7" class="fas fa-lock-open"></i></td>
+          </tr>
+          <tr>
+            <th scope="row"> 5:00 PM </th>
+            <td> End of Day</td>
+            <td class = "bg-danger"><i class="fas fa-lock"></i></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
