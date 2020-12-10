@@ -32,4 +32,11 @@ for (var i=0; i < textContent.length; i++) {
     }
 }
 
+$("#clear-button").click(function() {
+    for (var i = 1; i < 10; i++) {
+        $(`#text-area-${i}`).text("")
+        localStorage.setItem(`textInput${i}`, $(`#text-area-${i}`).val())
+    }
+})
+
 storeText ()
