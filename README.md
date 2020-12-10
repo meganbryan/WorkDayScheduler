@@ -10,4 +10,4 @@
     * The user can clear their entire schedule using the button under the heading. 
     
 ### [Work Day Scheduler](https://meganbryan.github.io/WorkDayScheduler/)
-### ![Screenshot of Application](WorkDayScheduler_SS)
+### ![Screenshot of Application](WorkDayScheduler_SS.jpeg)
