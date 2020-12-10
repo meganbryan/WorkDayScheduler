@@ -27,72 +27,94 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <button id = "clear-button"> Clear Schedule </button>
     </header>
     <div class="container">
-      <table class="table table-bordered table-striped table-secondary text-center">
-        <thead>
-          <tr>
-            <th scope="col" width= "15%">Time Slot</th>
-            <th scope="col" width= "70%"> Event </th>
-            <th scope="col" width= "15%">Add to schedule</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"> 9:00 AM </th>
-            <td> Beginning of Day</td>
-            <td class = "bg-danger"><i class="fas fa-lock"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 9:00 - 10:00 AM </th>
-            <td id = "item-append-1"> </td>
-            <td class = "bg-success "><i id = "add-item-1" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 10:00 - 11:00 AM </th>
-            <td id = "item-append-2"> </td>
-            <td class = "bg-success"><i id = "add-item-2" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 11:00 - 12:00 PM </th>
-            <td id = "item-append-3"> </td>
-            <td class = "bg-success"><i id = "add-item-3" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 12:00 - 1:00 PM </th>
-            <td> Lunch Break </td>
-            <td class = "bg-danger"><i class="fas fa-lock"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 1:00 - 2:00 PM </th>
-            <td id = "item-append-4"> </td>
-            <td class = "bg-success"><i id = "add-item-4" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 2:00 - 3:00 PM </th>
-            <td id = "item-append-5"> </td>
-            <td class = "bg-success"><i id = "add-item-5" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 3:00 - 4:00 PM </th>
-            <td id = "item-append-6"> </td>
-            <td class = "bg-success"><i id = "add-item-6" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 4:00 - 5:00 PM </th>
-            <td id = "item-append-7"> </td>
-            <td class = "bg-success"><i id = "add-item-7" class="fas fa-lock-open"></i></td>
-          </tr>
-          <tr>
-            <th scope="row"> 5:00 PM </th>
-            <td> End of Day</td>
-            <td class = "bg-danger"><i class="fas fa-lock"></i></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+          <p>9 AM</p>
+        </div> 
+        <textarea id = "text-area-1" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "1">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>10 AM</p>
+        </div> 
+        <textarea id = "text-area-2" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "2">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>11 AM</p>
+        </div> 
+        <textarea id = "text-area-3" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "3">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>12 PM</p>
+        </div> 
+        <textarea id = "text-area-4" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "4">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>1 PM</p>
+        </div> 
+        <textarea id = "text-area-5" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "5">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>2 PM</p>
+        </div> 
+        <textarea id = "text-area-6" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "6">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>3 PM</p>
+        </div> 
+        <textarea id = "text-area-7" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "7">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>4 PM</p>
+        </div> 
+        <textarea id = "text-area-8" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "8">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
+      <div class = "row time-block">
+        <div class = "col-1 hour">
+        <p>5 PM</p>
+        </div> 
+        <textarea id = "text-area-9" class = "col-10 textArea"></textarea> 
+        <button class = "col-1 saveBtn row" value = "9">
+          <i class="fas fa-lock"></i>
+        </button> 
+      </div>
     </div>
-
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
-</html>
+  </html>
